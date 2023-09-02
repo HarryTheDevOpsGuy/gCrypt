@@ -5,14 +5,27 @@ gCrypt is a utility to encrypt and decrypt the sensitive data stored in git repo
 
 
 # gCrypt Version
- **Version**        : {RELEASE_VER} <br>
- **Release Date**   : {RELEASE_DATE} <br>
+ **Version**        : v0.1.2 <br>
+ **Release Date**   : 02-Sep-23 <br>
 
 
 ## Installation 
 ```
 sudo apt-get install git-crypt
-
+sudo curl -sL "https://github.com/HarryTheDevOpsGuy/gcrypt/raw/master/$(uname -p)/gcrypt" -o /usr/bin/gcrypt
+chmod +x /usr/bin/gcrypt
+gcrypt help 
 ```
 
+## Getting Started with your git Repository. 
+```
+git clone https://github.com/HarryTheDevOpsGuy/gCrypt.git
+cd gCrypt
+git config user.email "YourEmail@domain.com"
+git config user.name "YourName"
+
+gcrypt init
+gcrypt trust gitusersemail@domain.com
+
+```
  
